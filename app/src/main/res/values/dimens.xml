@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="value_10">10dp</dimen>
+    <dimen name="value_8">8dp</dimen>
+    <dimen name="double_content_padding">4dp</dimen>
+    <color name="transparentBlack_double">#7A000000</color>
+    <dimen name="content_padding_recycle">2dp</dimen>
+    <dimen name="card_strok_widht">0.8dp</dimen>
+    <dimen name="detail_ic_margin">18dp</dimen>
+    <dimen name="detail_ic_size">32dp</dimen>
+    <dimen name="value_20">13dp</dimen>
+    <dimen name="marginleft_category">1dp</dimen>
+    <dimen name="stockwallwidth">180dp</dimen>
+
+    <dimen name="home_margin_top">22dp</dimen>
+    <dimen name="home_margin_top_inner">10dp</dimen>
+    <dimen name="home_txt_margin">6dp</dimen>
+    <dimen name="home_padding_left">4dp</dimen>
+    <dimen name="padding_bottom_Ad">120dp</dimen>
+    <dimen name="double_wall_hight">370dp</dimen>
+    <dimen name="double_wall_width">173dp</dimen>
+    <dimen name="carousal_height">240dp</dimen>
+    <dimen name="stock_banner_height">152dp</dimen>
+    <dimen name="livewallwidth">115dp</dimen>
+    <dimen name="livewallheight">220dp</dimen>
+    <dimen name="marginrightRecharcle">8dp</dimen>
+    <dimen name="detail_icon_height_double">25dp</dimen>
+    <dimen name="expand_height">200dp</dimen>
+</resources>

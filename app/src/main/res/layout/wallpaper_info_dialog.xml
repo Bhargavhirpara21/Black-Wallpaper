@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/round_corner_info"
+    android:padding="@dimen/value_10">
+
+    <ImageView
+        android:id="@+id/stock_item_img"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_info"
+        app:tint="@color/black4" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/value_20"
+        android:id="@+id/rl_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stock_item_img"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="centerCrop"
+            android:layout_height="24dp"
+            android:src="@mipmap/user" />
+
+        <TextView
+            android:layout_marginStart="@dimen/value_10"
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="OpenClipart-Vectors"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/value_10"
+        android:id="@+id/rl_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_author"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="centerCrop"
+            android:layout_height="24dp"
+            android:src="@mipmap/ic_link" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_marginStart="@dimen/value_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_vertical"
+            android:text="https://pixabay.com/users/victoria_borodinova-6314823/"
+            android:textColor="@color/selectedTextColor"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_licenece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_link"
+        android:layout_marginTop="@dimen/value_10"
+        android:layout_marginBottom="@dimen/value_10"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_copyright" />
+
+        <TextView
+            android:id="@+id/license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value_10"
+            android:gravity="clip_vertical"
+            android:text="Wallgenic License"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+</RelativeLayout>

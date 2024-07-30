@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Black Wallpaper</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_search">Search</string>
+
+    <string name="menu_Auto_wall_change_title">Auto Wallpaper Change</string>
+    <string name="menu_fav_title">Favourites</string>
+    <string name="menu_downloads_title">Downloads</string>
+    <string name="menu_rateus_title">Rate Us</string>
+    <string name="menu_share_title">Share</string>
+    <string name="menu_wall_not_working_title">Wallpaper Not Working?</string>
+    <string name="menu_privacy_title">Privacy Policy</string>
+    <string name="menu_support_title">Support</string>
+
+    <string name="no_internet">No Internet Access!</string>
+    <string name="info_btn">Info</string>
+    <string name="ok_btn">Ok</string>
+    <string name="invite_frnd">Invite your friends to </string>
+    <string name="help">Help</string>
+    <string name="update">Update</string>
+    <string name="duration">Select Duration :</string>
+    <string name="apply">Apply</string>
+    <string name="getting_wall">Getting Wallpaper</string>
+    <string name="updating_data">Updating Data</string>
+    <string name="Auto_wall_change">Auto Wallpaper Change</string>
+
+    <string-array name="auto_time">
+        <item>1 hour</item>
+        <item>2 hour</item>
+        <item>4 hour</item>
+        <item>6 hour</item>
+        <item>12 hour</item>
+        <item>24 hour</item>
+    </string-array>
+    <string name="auto_wall_off">Auto Wallpaper Changer Off</string>
+    <string name="success">Wallpaper Applied Successfully</string>
+    <string name="toast_failed_launch_wallpaper_chooser">Cannot open wallpaper selection interface. Please manually set Black wallpaper app as your wallpaper on the home screen</string>
+    <string name="wall_applied">Wallpaper Applied Successfully </string>
+    <string name="disable">Disable</string>
+    <string name="downloads">Downloads</string>
+    <string name="nodata">No Data Found!</string>
+    <string name="letsdownload">Don\'t have any wallpaper? Let\'s download...</string>
+
+    <string name="view">View</string>
+    <string name="set_wall">Set As Wallpaper</string>
+    <string name="del">Delete</string>
+    <string name="share">Share</string>
+
+    <string name="delete_txt">Are you sure, you want to delete?</string>
+    <string name="disable_txt">Are you sure, you want to disable?</string>
+    <string name="del_dialog">Delete Dialog</string>
+    <string name="dis_dialog">Disable Dialog</string>
+    <string name="yes_btn">Yes</string>
+    <string name="no_btn">No</string>
+    <string name="setas">Set as:</string>
+    <string name="storage_txt">Please Allow permission in order to download wallpaper to phone storage</string>
+    <string name="server_error">Unable to get data due to server error. please try again</string>
+    <string name="info">Info</string>
+    <string name="retry">RE-TRY</string>
+
+    <string name="wallpaper">Wallpaper</string>
+    <string name="live_wall">Live Wallpaper</string>
+    <string name="fav">Favourites</string>
+    <string name="no_fav_live">You don\'t have any Favorite Live wallpaper.</string>
+    <string name="no_fav_wall">You don\'t have any Favorite wallpaper.</string>
+    <string name="no_data">No data available. pls try again.</string>
+    <string name="set_as_dialog">Set Wallpaper On</string>
+    <string name="set_home">Home</string>
+    <string name="set_lock">Lock</string>
+    <string name="set_both">Both</string>
+    <string name="set_system">System</string>
+    <string name="press_again">Press once again to exit</string>
+    <string name="set_fav_succ">Set Favourite successfully</string>
+    <string name="remove_fav">Removed From Favourite </string>
+    <string name="unable_download">Unable to download:</string>
+
+    <string name="down_at">Downloaded at</string>
+    <string name="downloading">Downloading...</string>
+    <string name="download_succ">Download Successful</string>
+    <string name="download_succ_des">Wallpaper Saved to Gallery</string>
+    <string name="download_already">Already Downloaded</string>
+    <string name="network_not_available">Network not available</string>
+    <string name="wall_updated">Live Wallpaper Updated.</string>
+    <string name="change_live">Are you sure want to change Live Wallpaper?</string>
+    <string name="categories">Categories</string>
+    <string name="delete">Deleted Successful</string>
+    <string name="try_again">Try Again Later</string>
+    <string name="select_wall">Please select wallpaper</string>
+    <string name="set_double">Are you sure want to set double wallpaper?</string>
+    <string name="menu_double">Double Wallpaper</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_live">Live Wallpaper</string>
+    <string name="menu_category">Category</string>
+    <string name="pitch_black_category">Pitch Black</string>
+    <string name="stock_wall">Stock Categories</string>
+
+    <string name="remove_search">Remove from search history?</string>
+    <string name="remove">Remove</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="search_wallpaper">Search Wallpaper Here...</string>
+    <string name="no_data_search">No data available. Try different keyword.</string>
+
+    <string name="allow_per_guide_notification">Please Allow permission to get Important notification</string>
+    <string name="allow_per_guide_notification1">Please Allow permission to get Important notification. Go Permission and check \'Notifications\' permission</string>
+</resources>

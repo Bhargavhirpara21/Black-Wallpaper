@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/app_bar_main_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_main"
+            android:background="@color/black"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:ignore="NestedWeights">
+
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/mini_blackscreen"
+                android:backgroundTint="@color/black4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/seekbarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="12dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/duration"
+                            android:textColor="@color/white"
+                            android:textSize="17dp" />
+
+                        <Spinner
+                            android:id="@+id/timeSpinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/white" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_1"
+                android:layout_marginTop="30dp">
+
+
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="330dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/double_content_padding"
+                        app:cardBackgroundColor="@color/transparent"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/relative_img2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/auto_image3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingTop="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingStart="13dp"
+                                        android:text="3:25"
+                                        android:textColor="@color/white"
+                                        android:textSize="8.5sp"></TextView>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/double_botttom_to_top"
+                                    android:rotation="180" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@drawable/double_botttom_to_top" />
+
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="2dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="10dp"
+                                    android:src="@drawable/mini_blackscreen" />
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginRight="6dp"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingTop="5dp">
+
+                                    <ImageView
+                                        android:layout_width="8.5dp"
+                                        android:layout_height="8.5dp"
+                                        android:layout_marginRight="2dp"
+                                        android:src="@mipmap/ic_signal"
+                                        android:visibility="visible"
+                                        app:tint="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:text="90%"
+                                        android:textColor="@color/white"
+                                        android:textSize="8sp" />
+
+                                    <ImageView
+                                        android:layout_width="9dp"
+                                        android:layout_height="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:src="@mipmap/ic_battery" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_phone_double"
+                        android:scaleType="centerCrop" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enable_auto_wall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/all_btn_bg"
+                android:letterSpacing=".05"
+                android:text="@string/apply"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/disablebtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/all_btn_bg"
+                android:text="@string/disable"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

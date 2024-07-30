@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_pupularTag"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_tag_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_margin_top"
+            android:layout_marginLeft="@dimen/home_txt_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tag_title"
+                android:layout_width="2dp"
+                android:background="@drawable/carousal_card_bg"
+                android:layout_centerVertical="true"
+                android:layout_height="25dp"
+                android:backgroundTint="@color/yellow">
+
+            </TextView>
+
+            <TextView android:id="@+id/txt_tags_title"
+                android:layout_width="wrap_content"
+                android:layout_toEndOf="@+id/tag_title"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginTop="@dimen/home_margin_top_inner"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_tag_item">
+
+            <wallpaper.black.live.uhd.AppUtils.TagsFlowLayout
+                android:id="@+id/flow_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:flChildSpacing="6dp"
+                app:flRowSpacing="8dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

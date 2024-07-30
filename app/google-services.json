@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "698249415331",
+    "project_id": "black-wallpaper-f6bab",
+    "storage_bucket": "black-wallpaper-f6bab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698249415331:android:b854432960b88035ae4d16",
+        "android_client_info": {
+          "package_name": "wallpaper.black.live.uhd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLAy50_gK9q7tSBQHcBERT0X9CPfCBo1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "wallpaper.black.live.uhd",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 43,
+      "versionName": "1.0.43",
+      "outputFile": "app-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

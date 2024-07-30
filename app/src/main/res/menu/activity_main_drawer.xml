@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+        <item
+            android:id="@+id/nav_auto_wall"
+            android:icon="@mipmap/ic_menu_auto_wall"
+            android:title="@string/menu_Auto_wall_change_title" />
+        <item
+            android:id="@+id/nav_auto_Favorite"
+            android:icon="@mipmap/ic_menu_favourite"
+            android:title="@string/menu_fav_title" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@mipmap/ic_menu_double"
+            android:iconTint="@color/white"
+            android:title="@string/menu_downloads_title" />
+        <item
+            android:id="@+id/nav_wall_not_working"
+            android:icon="@mipmap/ic_menu_wall_not_workig"
+            android:title="@string/menu_wall_not_working_title" />
+
+        <item
+            android:id="@+id/nav_ratus"
+            android:icon="@mipmap/ic_menu_rate_us"
+            android:title="@string/menu_rateus_title" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/ic_menu_share"
+            android:title="@string/menu_share_title" />
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@mipmap/ic_menu_policy"
+            android:title="@string/menu_privacy_title" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@mipmap/ic_menu_support"
+            android:title="@string/menu_support_title" />
+</menu>

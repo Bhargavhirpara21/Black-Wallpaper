@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content" android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" android:gravity="center"
+    android:background="@drawable/round_drawable_black"
+    android:padding="20dp">
+
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+        android:id="@+id/progress_download"
+        android:layout_width="100dp"
+        android:layout_height="100dp" android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        app:dotColor="@color/white"
+        app:progressBackgroundColor="@color/dlg_bg_color"
+        app:progressBackgroundStrokeWidth="16dp"
+        app:progressCap="round" android:layout_gravity="center_horizontal"
+        app:progressColor="@color/white"
+        app:progressStrokeWidth="8dp"
+        app:dotWidth="8dp"
+        app:startAngle="270"
+        app:textColor="#fffc59"
+        app:textSize="18sp"
+        app:drawDot="true"
+        app:enableProgressAnimation="true"
+        app:direction="clockwise" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" android:gravity="center_horizontal"
+        android:text="@string/downloading"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

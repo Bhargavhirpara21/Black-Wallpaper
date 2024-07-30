@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:name="BlackApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BlackWallpaperFinal">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".PrivacyActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".AutoChangerActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".MyDownloadActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".MyFavoriteActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".WallpaperDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".LiveWallpaperDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".PitchWallpaperActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".MoreWallpaperActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".StockWallpaperActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity android:theme="@style/Theme.BlackWallpaperFinal.NoActionBar"
+            android:name=".WallpaperSearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <service
+            android:name=".Services.ExoVideoService"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livevideowall" />
+        </service>
+
+        <service android:exported="true"
+            android:name=".BGServices.AutoChangerService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/autowall" />
+        </service>
+
+        <activity android:theme="@style/splash_theme"
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RedirectActivity" android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <service android:name=".FMessaging.FCMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name=".AppUtils.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

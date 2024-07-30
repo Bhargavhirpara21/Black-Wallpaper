@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_clr"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <wallpaper.black.live.uhd.CustomViews.FullScreenVideoView
+            android:id="@+id/fullscreen_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imgview_blur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/ll_user_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_setWallpaper"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@mipmap/ic_set_new" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/videoFeature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBlack_double"
+            android:paddingTop="18dp"
+            android:paddingBottom="4dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/detail_ic_size"
+                android:layout_height="@dimen/detail_ic_size"
+                android:layout_marginStart="15dp"
+                android:padding="6dp"
+                android:src="@mipmap/ic_back" />
+
+            <ImageView
+                android:id="@+id/img_likeWallpaper"
+                android:layout_width="@dimen/detail_ic_size"
+                android:layout_height="@dimen/detail_ic_size"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="6dp"
+                android:src="@mipmap/favorite_white" />
+
+            <ProgressBar
+                android:id="@+id/live_progress"
+                android:layout_width="@dimen/detail_ic_size"
+                android:layout_height="@dimen/detail_ic_size"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:indeterminateTint="@color/white"
+                android:padding="6dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/fab_disable"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/fab_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/restricted"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/fab_delete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/ic_delete"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_Progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible">
+
+            <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+                android:id="@+id/progress_download"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                app:direction="clockwise"
+                app:dotColor="@color/white"
+                app:dotWidth="8dp"
+                app:drawDot="true"
+                app:enableProgressAnimation="true"
+                app:progressBackgroundColor="@color/dlg_bg_color"
+                app:progressBackgroundStrokeWidth="16dp"
+                app:progressCap="round"
+                app:progressColor="@color/white"
+                app:progressStrokeWidth="8dp"
+                app:startAngle="270"
+                app:textColor="#fffc59"
+                app:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/videofilesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progress_download"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

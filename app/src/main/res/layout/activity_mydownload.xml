@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_clr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/app_bar_main_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/download_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_main"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/txt_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/nodata"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_Progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/item_loading_common"></include>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_marginTop="@dimen/home_margin_top_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_CarousalParent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/carousal_height"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <wallpaper.black.live.uhd.AppUtils.CarousalRecyclerPager
+                android:id="@+id/category_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                app:rvp_millisecondsPerInch="100"
+                app:rvp_singlePageFling="true"
+                app:rvp_triggerOffset="0.0" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

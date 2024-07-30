@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_wallpreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/Img_main_wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/ll_user_option"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/img_downloadWallpaper"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:background="@mipmap/ic_download_new" />
+
+                <ImageView
+                    android:id="@+id/img_setWallpaper"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/ic_set_new" />
+
+
+                <LinearLayout
+                    android:id="@+id/hidden_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_above="@+id/img_option"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="45dp"
+                    android:background="@drawable/round_corner_menu"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_info"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_info" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/img_likeWallpaper"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:padding="5dp"
+                            android:src="@mipmap/favorite_white" />
+
+                        <ProgressBar
+                            android:id="@+id/live_progress"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:indeterminateTint="@color/white"
+                            android:padding="5dp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <!--        favorite_red_white.png-->
+
+                    <ImageView
+                        android:id="@+id/img_shareWallpaper"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_share" />
+
+                    <ImageView
+                        android:id="@+id/img_editwall"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/img_edit" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_option"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@mipmap/ic_option"
+                    android:rotation="90" />
+
+
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/edit_dialog_include"
+                layout="@layout/edit_filter_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/thumbTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="18dp"
+                android:padding="6dp"
+                android:src="@mipmap/ic_back_new" />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/fab_disable"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_above="@+id/fab_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/restricted"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/fab_delete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/ic_delete"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_Progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progress_download"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

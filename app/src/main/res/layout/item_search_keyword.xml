@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/rl_search_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/time_icon_temp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_history"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/keywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/img_delete"
+            android:layout_toRightOf="@+id/time_icon_temp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="popular tags "
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_close"
+            android:padding="6dp" />
+    </RelativeLayout>
+</FrameLayout>

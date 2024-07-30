@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Splash Screen Theme (Android 12+) -->
+    <style name="splash_theme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_splash</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.BlackWallpaperFinal</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+</resources>
